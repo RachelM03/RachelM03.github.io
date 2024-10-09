@@ -5,7 +5,12 @@
             var customerName;
             var itemRequest;
             var itemQuantity;
-            var timeHours;
+            var timeHours = new Date();
+            let hour = timeHours.gethours();
+
+            if (timeHours<12){
+                customerGreet = "Good Morning"
+            }
             
             
             customerName = window.prompt("Welcome to the Pokemon Center! Enter your name please:")
@@ -17,5 +22,8 @@
         <h1>
             Pokemon Center
         </h1>
+        <h2>
+            
+        </h2>
     </head>
 </html>
